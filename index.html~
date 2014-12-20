@@ -1,11 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb" dir="ltr">
+
     <head>
-        <title></title>
-        <link rel="stylesheet" href="css/uikit.min.css" />
-        <script src="jquery.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NAGTeam</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+        <link type='text/css' href='style/brick-1.0.1.css' rel="stylesheet">
+        <link rel="stylesheet" href="css/uikit.min.css">
+        <script src="../vendor/jquery.js"></script>
+        <script src='script/brick-1.0.1.js'></script>
         <script src="js/uikit.min.js"></script>
+        <style>
+            .mobile-view {
+                width:200px;
+                height:340px;
+                margin:auto;
+                margin-left:20%;
+                border-color:#423c42;
+                border-width: 40px 15px 40px;
+                border-radius: 20px;
+                border-style: solid;
+                overflow: hidden;
+                display:inline-block;
+             }
+
+            .mobile-view img{
+                width:inherit;
+                height:inherit;
+            }
+        </style>
     </head>
+
     <body>
+
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+            <nav class="uk-navbar uk-margin-large-bottom">
+                <a class="uk-navbar-brand uk-hidden-small" href="layouts_frontpage.html">NAGTeam</a>
+                <ul class="uk-navbar-nav uk-hidden-small">
+                    <li class="uk-active">
+                        <a href="index.html">Homepage</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    
+                </ul>
+                <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+                <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Brand</div>
+            </nav>
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-1-1">
+
+                    <div class="uk-vertical-align uk-text-center" style="background:#dfdfdf 50% 0 no-repeat; height: 450px;">
+                        <div class="uk-vertical-align-middle uk-width-1-2">
+                            <h1 class="uk-heading-large">Help us impoving ourselves</h1>
+                            <p class="uk-text-large">visit our page!</p>
+                            <p>
+                                <a class="uk-button uk-button-primary uk-button-large" href="#">Github</a>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-1-3">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-6">
+                            <i class="uk-icon-cog uk-icon-large uk-text-primary"></i>
+                        </div>
+                        <div class="uk-width-5-6">
+                            <h2 class="uk-h3">It Works!</h2>
+                            <p>Now don't. So please be quiet!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-medium-1-3">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-6">
+                            <i class="uk-icon-thumbs-o-up uk-icon-large uk-text-primary"></i>
+                        </div>
+                        <div class="uk-width-5-6">
+                            <h2 class="uk-h3">Follow our Projects</h2>
+                            <p>There are a lot of work on progress, fork&pull us</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-medium-1-3">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-6">
+                            <i class="uk-icon-cloud-download uk-icon-large uk-text-primary"></i>
+                        </div>
+                        <div class="uk-width-5-6">
+                            <h2 class="uk-h3">Our Products</h2>
+                            <p>Download our releases on Firefox Marketplace or on Github</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-1-3">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-6">
+                            <i class="uk-icon-dashboard uk-icon-large uk-text-primary"></i>
+                        </div>
+                        <div class="uk-width-5-6">
+                            <h2 class="uk-h3">Beware</h2>
+                            <p>Don't leave your laptop un-blocked, forkbombs are around the corner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-medium-1-3">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-6">
+                            <i class="uk-icon-comments uk-icon-large uk-text-primary"></i>
+                        </div>
+                        <div class="uk-width-5-6">
+                            <h2 class="uk-h3">Contact us</h2>
+                            <p>Contact us on Twitter or on IRC</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-medium-1-3">
+                    <div class="uk-grid">
+                        <div class="uk-width-1-6">
+                            <i class="uk-icon-briefcase uk-icon-large uk-text-primary"></i>
+                        </div>
+                        <div class="uk-width-5-6">
+                            <h2 class="uk-h3">Workplace</h2>
+                            <p>Meet us in Milan, via Venezian</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="uk-grid-divider">
+
+            <div class="uk-grid" data-uk-grid-margin>
+
+                <div class="uk-width-medium-1-2">
+                    <iframe width="660" height="400" src="//www.youtube.com/embed/aITEmlIzBNY?rel=0"    ></iframe>
+                </div>
+
+                <div class="uk-width-medium-1-2">
+                    <h1>BitClient</h1>
+                    <p>Workin' on a new project called BitClient, so we are studing bitcoin protocol and how to make a home-made transiction. Cryptocoinz are goin' to be ours!</p>
+                    <h2>Soundtrack for this project</h2>
+                    <p>by YTCracker</p>
+                    <a class="uk-button uk-button-primary" href="#">Check the Source!</a>
+                </div>
+
+            </div>
+
+            <hr class="uk-grid-divider">
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-1-2">
+                    <h1>Firefox OS HaCkAtOn</h1>
+                    <p>Our first app called Trovatreno win the Milan Firefox OS Hackaton! We hard-coded for 10 hours and finally we'll come back home with a new Geeksphone Peak with Firefox OS on it. </p>
+                    <h2>TrovaTreno</h2>
+                    <p>Are you tired of Italian train which never are in time? TrovaTreno lets you know when your train is going to leave and it will give you updates about train's location and delay!</p>
+                    <a class="uk-button uk-button-primary" href="#">Get the source!</a>
+                </div>
+
+                <div class="uk-width-medium-1-2">
+                    <div class='mobile-view'>
+                            <x-deck>
+                                <x-card transition="show" selected><img src='src/tt1.png'/></x-card>
+                                <x-card></x-card>
+                                <x-card></x-card>
+                            </x-deck>
+                        </div>
+                </div>
+            </div>
+
+            <hr class="uk-grid-divider">
+
+            <div class="uk-grid" data-uk-grid-margin>
+                <div class="uk-width-medium-1-1">
+                    <div class="uk-panel uk-panel-box uk-text-center">
+                        <p><strong>PAGE UNDER CONSTRUCTION</strong> Hungry of code? <a class="uk-button uk-button-primary uk-margin-left" href="#">Get also this source!</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </body>
 </html>
